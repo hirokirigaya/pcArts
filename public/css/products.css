@@ -96,6 +96,7 @@ body {
   flex-direction: row;
   gap: 1rem;
   margin: 0 auto;
+  justify-content: center;
 }
 
 .product-link {
@@ -122,4 +123,23 @@ body {
 .title-grid h1 {
   color: var(--font);
   font-size: 2.25rem;
+}
+
+/*
+
+    R E S P O N S I V E
+
+
+*/
+
+@media(max-width: 440px) {
+  .img-product {
+    width: 350px;
+  }
+}
+
+@media(max-width: 370px) {
+  .img-product {
+    width: 300px;
+  }
 }

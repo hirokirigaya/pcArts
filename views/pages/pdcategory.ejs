@@ -29,6 +29,20 @@
               <p class="descriptionprod"> <span>Description: </span> <%= product.description %>
               </p>
               <% }) %>
+              <div class="productnew">
+                <% products.forEach(function(product) { %>
+                  <div class="newdesc">
+                    <h1>
+                      <%= product.title %>
+                    </h1>
+  
+                    <% }) %>
+                      <% products.forEach(function(product) { %>
+                        <span class="mindesc"> <%= product.mindesc %> </span>
+                        <p class="price"><span class="sing">$</span> <%= product.price %> <span class="zero">,00</span></p>
+                        <% }) %>
+                          <button class="btnbuy">BUY</button>
+                  </div>
           </div>
         </section>
       </main>

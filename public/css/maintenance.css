@@ -62,6 +62,9 @@ body {
 .section-maintenance {
   display: flex;
   height: 100vh;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 .maintenance {
@@ -71,12 +74,41 @@ body {
 
 .maintenance h1 {
   color: var(--font-dark);
-  margin: .8rem 2rem;
   font-size: 2.275rem;
 }
 
 
 .bg-maintenance {
-  margin-top: 5rem;
-  opacity: 30%;
+  display: flex;
+  width: 400px;
+  opacity: 10%;
+  position: absolute;
+  bottom: 0;
+  justify-self: center;
+}
+
+/*
+
+       R E S P O N S I V E
+
+
+*/
+
+@media(max-width: 520px) {
+  .maintenance h1 {
+    font-size: 2rem;
+  }
+}
+
+
+@media(max-width: 460px) {
+  body {
+    overflow-x: hidden;
+  }
+  .maintenance h1 {
+    font-size: 1.4rem;
+  }
+  .bg-maintenance {
+    width: 380px;
+  }
 }
