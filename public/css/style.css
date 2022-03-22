@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+/*
+
+
+C O L O R S
+
+
+*/
+
+:root {
+  --bg: rgba(12, 12, 12, 0.6);
+  --font: #e1e1e1;
+  --font-dark: #9c9c9c;
+  --white: #fff;
+  --hover-light: #415eff;
+  --black: #000;
+  --bg-light: rgb(20, 20, 20);
+  --black-light: rgb(26, 26, 26);
+  --border: #3650e0;
+  
+}
+
+/*
+
+
+      S T Y L E     G L O B A L
+      
+
+      font-family: 'Roboto', sans-serif;
+*/
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--bg-light);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--hover-light);
+}
+
+/*
+
+
+      N A V     B A R
+      
+
+*/
+
+header {
+  background-color: var(--bg);
+  backdrop-filter: blur(8px);
+  padding: 1rem;
+  position: fixed;
+  width: 100vw;
+  border-bottom: 1px solid var(--border);
+  z-index: 999;
+}
+
+.navbar {
+  max-width: 960px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.navbar .list-nav {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  width: 100%;
+}
+.navbar .logo {
+  text-decoration: none;
+  color: var(--font);
+  font-size: 1.125rem;
+  font-weight: 300;
+}
+
+.navbar .list-nav li {
+  list-style: none;
+}
+.navbar .list-nav li a {
+  text-decoration: none;
+  color: var(--font);
+  font-size: 1.125rem;
+  font-weight: 300;
+}
+
+.navbar .list-nav li a:hover {
+  color: var(--white);
+}
+
+.navbar .login {
+  color: var(--font);
+  font-size: 1.125rem;
+  font-weight: 400;
+  text-decoration: none;
+  border: 1px solid var(--font);
+  border-radius: 4px;
+  padding: .4rem;
+}
+
+.navbar .login:hover {
+  color: var(--white);
+  border: 1px solid var(--white);
+  background-color: var(--bg-light);
+}
+
+/*
+
+
+       M  A  I  N    -    I N D E X
+
+
+*/
+
+.products {
+  display: flex;
+  margin-bottom: 4.5rem;
+}
+
+.group {
+  display: flex;
+  margin: 9rem 0rem 0rem 2rem;
+  align-items: center;
+  justify-content: space-around;
+  width: 100vw;
+}
+.group .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .8rem;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--font);
+  
+}
+
+.group .text p {
+  width: 500px;
+  color: var(--font-dark);
+}
+.dragon {
+  width: 300px;
+  opacity: 70%;
+}
+.group .text h1 {
+  font-size: 2.25rem;
+}
+
+.btn-products {
+  background-color: var(--bg-light);
+  color: var(--font);
+  height: 35px;
+  width: 200px;
+  border: 1px solid var(--font);
+  border-radius: 4px;
+  font-size: 1.25rem;
+  margin-top: .8rem;
+  cursor: pointer;
+
+}
+
+.btn-products a {
+  text-decoration: none;
+  color: var(--font);
+  padding: 10px;
+  width: 200px;
+}
+
+.btn-products:hover {
+  background-color: var(--black-light);
+}
+
+/*
+
+      S E T U P S
+
+
+*/
+
+.products2 {
+  background-color: var(--bg);
+  border-top: 1px solid var(--border);
+}
+
+.products2 h2 {
+  max-width: 960px;
+  font-size: 2.275rem;
+  color: var(--font);
+  margin: 4rem auto .8rem auto;
+}
+
+.setups {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 1280px;
+  margin: 0 auto;
+  gap: 1rem;
+}
+.product {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 3rem;
+  margin-bottom: 10rem;
+}
+.product:nth-child(2n+1) {
+  flex-direction: row-reverse;
+}
+.setups img{
+  width: 500px;
+  border: 5px solid var(--bg-light);
+  border-radius: 4px;
+}
+
+.setups .name {
+  background-color: var(--bg-light);
+  color: var(--font);
+  font-size: 1.25rem;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.description {
+  color: var(--font-dark);
+  font-weight: 400;
+  font-size: 1.25rem;
+  width: 500px;
+  margin-left: 50px;
+}
+
+.product-link {
+  text-decoration: none;
+}
+
+/*
+
+      F O O T E R
+
+
+*/
+
+footer {
+  border-top: 1px solid var(--border);
+  display: flex;
+  color: var(--font-dark);
+  justify-content: center;
+  padding: 20px;
+  background-color: var(--bg-light);
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--font);
+}

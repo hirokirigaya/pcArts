@@ -1,0 +1,16 @@
+<section class="products2">
+  <h2>Products</h2>
+  <div class="setups">
+    <% sample.forEach(function(product) { %>
+    <div class="product">
+      <div>
+          <a href="/" class="product-link">
+            <p class="name"> <%= product.title %> </p>
+            <img src="<%= product.image %> " alt="">
+          </a>
+        </div>
+        <p class="description"> <%= product.description %> </p>
+        </div>
+        <% }) %> 
+      </div>
+</section>

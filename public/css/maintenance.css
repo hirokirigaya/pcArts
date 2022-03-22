@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+/*
+
+
+C O L O R S
+
+
+*/
+
+:root {
+  --bg: rgba(12, 12, 12, 0.6);
+  --font: #e1e1e1;
+  --font-dark: #9c9c9c;
+  --white: #fff;
+  --hover-light: #415eff;
+  --black: #000;
+  --bg-light: rgb(20, 20, 20);
+  --black-light: rgb(26, 26, 26);
+  --border: #3650e0;
+  
+}
+
+/*
+
+
+      S T Y L E     G L O B A L
+      
+
+      font-family: 'Roboto', sans-serif;
+*/
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--bg-light);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--hover-light);
+}
+
+
+.section-maintenance {
+  display: flex;
+  height: 100vh;
+}
+
+.maintenance {
+  margin-top: 5rem;
+  
+}
+
+.maintenance h1 {
+  color: var(--font-dark);
+  margin: .8rem 2rem;
+  font-size: 2.275rem;
+}
+
+
+.bg-maintenance {
+  margin-top: 5rem;
+  opacity: 30%;
+}

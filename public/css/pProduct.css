@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+/*
+
+
+C O L O R S
+
+
+*/
+
+:root {
+  --bg: rgba(12, 12, 12, 0.6);
+  --font: #e1e1e1;
+  --font-dark: #9c9c9c;
+  --white: #fff;
+  --hover-light: #415eff;
+  --black: #000;
+  --bg-light: rgb(20, 20, 20);
+  --black-light: rgb(26, 26, 26);
+  --border: #3650e0;
+  
+}
+
+/*
+
+
+      S T Y L E     G L O B A L
+      
+
+      font-family: 'Roboto', sans-serif;
+*/
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--bg-light);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--hover-light);
+}
+
+/*
+
+         M A I N
+
+
+*/
+
+.main-product {
+  display: flex;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: var(--bg);
+  max-width: 1280px;
+  width: 100%;
+  padding: 3rem;
+  margin: 6rem auto 1rem auto;
+  border-radius: 4px;
+}
+
+.product-container .product1{
+  display: flex;
+  max-width: 1280px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+
+.product-container .product1 .desc {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-img {
+  width: 700px;
+  border: 5px solid var(--bg-light);
+  border-radius: 4px;
+}
+.descriptionprod {
+  color: var(--font-dark);
+  font-size: 1.125rem;
+  max-width: 980px;
+  margin: 0 auto;
+}
+.descriptionprod span {
+  color: var(--font);
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.desc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .8rem;
+}
+
+.desc h1 {
+  color: var(--font);
+  font-size: 3.25rem;
+}
+
+.desc .mindesc {
+  color: var(--font-dark);
+  font-size: 1.25rem;
+}
+
+.desc .btnbuy {
+  background-color: var(--bg);
+  padding: 10px;
+  font-size: 1.25rem;
+  width: 100%;
+  border: 1px solid var(--font);
+  color: var(--font);
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.desc .btnbuy:hover {
+  background-color: var(--bg-light);
+}
+
+.desc .price {
+  font-size: 3rem;
+  color: var(--font);
+
+}
+
+.desc .sing {
+  font-size: 1.5rem;
+  color: var(--font-dark);
+}
+
+.desc .zero {
+  font-size: 1.5rem;
+  color: var(--font-dark);
+}

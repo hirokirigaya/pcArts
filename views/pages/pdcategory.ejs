@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../partials/head') %>
+  <link rel="stylesheet" href="/css/products.css">
+  <link rel="stylesheet" href="/css/pProduct.css">
+
+  <body>
+    <%- include('../partials/header') %>
+      <main class="main-product">
+        <section class="container">
+          <div class="product-container">
+            <div class="product1">
+              <% products.forEach(function(product) { %>
+                <img src="<%= product.image %> " alt="" class="product-img">
+                <div class="desc">
+                  <h1>
+                    <%= product.title %>
+                  </h1>
+
+                  <% }) %>
+                    <% products.forEach(function(product) { %>
+                      <span class="mindesc"> <%= product.mindesc %> </span>
+                      <p class="price"><span class="sing">$</span> <%= product.price %> <span class="zero">,00</span></p>
+                      <% }) %>
+                        <button class="btnbuy">BUY</button>
+                </div>
+            </div>
+            <% products.forEach(function(product) { %>
+              <p class="descriptionprod"> <span>Description: </span> <%= product.description %>
+              </p>
+              <% }) %>
+          </div>
+        </section>
+      </main>
+      <%- include('../partials/footer') %>
+  </body>
+
+</html>

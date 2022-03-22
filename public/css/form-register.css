@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+/*
+
+
+C O L O R S
+
+
+*/
+
+:root {
+  --bg: rgb(12, 12, 12);
+  --font: #e1e1e1;
+  --font-dark: #9c9c9c;
+  --white: #fff;
+  --hover-light: #415eff;
+  --black: #000;
+  --bg-light: rgb(20, 20, 20);
+  --black-light: rgb(26, 26, 26);
+  --border: #3650e0;
+  
+}
+
+
+/*
+
+
+      S T Y L E     G L O B A L
+      
+
+      font-family: 'Roboto', sans-serif;
+*/
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.bg-site {
+  background-color: var(--bg-light);
+  height: 100vh;
+}
+
+/*
+
+
+      F O R M    L O G I N
+      
+
+*/
+
+.forms {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+.form-login .form {
+  background-color: var(--bg);
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  border-radius: 4px;
+  width: 500px;
+}
+.form-login .form .text,
+.form-login .form .data .label,
+.form-login .form .links a {
+  color: var(--font);
+  font-family: 'Roboto', sans-serif;
+}
+.form-login .form .data .input {
+  padding-left: 2.5rem;
+}
+.form-login .form .text {
+  margin: .8rem;
+}
+
+.form-login .form .input {
+  width: 100%;
+  background-color: var(--black-light);
+  border: none;
+  height: 2.5rem;
+  color: var(--font-dark);
+  outline: none;
+  border-radius: 4px;
+  font-family: 'Roboto', sans-serif;
+}
+.form-login .form .login-btn {
+  width: 100%;
+  height: 4rem;
+  margin-bottom: .8rem;
+  font-size: 2rem;
+  font-weight: 600;
+  background-color: var(--border);
+  color: var(--font);
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.form-login .form .data {
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.form-login .form .data .eye {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  bottom: 8.3rem;
+  right: 10px;
+}
+.form-login .form .links {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.form-login .form .links .register {
+  display: flex;
+}
+.form-login .form .links .register p {
+  color: var(--font);
+}
+.form-login .form .links .back img{
+  height: 20px;
+  width: 20px;
+  transform: rotate(180deg);
+}
+.form-login .form .links a {
+  margin: 0px 1rem 0px 1rem;
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  margin-bottom: 1rem;
+  color: var(--font-dark);
+  font-family: 'Roboto', sans-serif;
+}
+
+.remember {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.remember a {
+  text-decoration: none;
+  color: var(--font-dark);
+  font-family: 'Roboto', sans-serif;
+}
+
+.remember .div .remember-me {
+  color: var(--font-dark);
+}
+
+.remember .div .remember-me:hover,
+.remember a:hover {
+  color: var(--white);
+}
+
+.form-login .form .login-btn:hover {
+ background-color: var(--hover-light);
+}
+.form-login .form .data .label {
+  position: relative;
+}
+.mail {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 7.9rem;
+  left: .5rem;
+}
+
+.lock {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: .5rem;
+  bottom: 8.3rem;
+}
+
+.name {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: .5rem;
+  top: 2.5rem;
+}
+
+.div #remember {
+  display: none;
+}
+
+.div #remember + label::before {
+  content: '';
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  background-color: transparent;
+  border: 1px solid;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 4px;
+}
+
+.div #remember:checked + label::before {
+  background-image: url(../img/check.svg);
+  background-color: var(--border);
+  background-repeat: no-repeat;
+}
+
+.div label {
+  user-select: none;
+}
